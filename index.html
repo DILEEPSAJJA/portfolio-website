@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="portfolio.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/puppeteer@4.0.0/index.js"></script>
+    <script src="Hello.js"></script>
+  </head>
+
+  <body>
+    <div class="site-main-wrapper">
+      <button class="hamberger">
+        <img src="./images/hamberger.svg" alt="" />
+      </button>
+      <div class="mobile-nav">
+        <button class="times"><img src="/img/times.svg" alt="" /></button>
+        <ul>
+          <li><a id="a" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Certificates</a></li>
+        </ul>
+      </div>
+      <header>
+        <div class="container">
+          <nav id="main-nav" class="flex items-center justify-between">
+            <div class="left flex items-center">
+              <div class="branding"></div>
+              <div>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Skills</a>
+                <a href="#work">Education</a>
+                <a href="#blog">certificates</a>
+              </div>
+            </div>
+            <div class="right">
+              <a href="#contact">
+                <button class="btn btn-primary" alt="">Contact</button>
+              </a>
+            </div>
+          </nav>
+          <div class="hero flex items-center justify-between">
+            <div class="left flex-1 flex justify-center">
+              <div class="dileep">
+                <img src="/img/logo-1.jpg" alt="" height="250" width="150" />
+              </div>
+            </div>
+            <div class="right flex-1">
+              <h6>Dileep Sajja</h6>
+              <h1>
+                I’m a <span><br />Web Developer</span>
+              </h1>
+
+              <div>
+                <a href="resume.docx">
+                  <button class="btn btn-secondary" alt="" target="_blank">
+                    DOWNLOAD CV
+                  </button></a
+                >
+              </div>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="about" class="about">
+        <div class="container flex items-center about-inner-wrap">
+          <div class="flex-1">
+            <img class="about-me-img" src="/img/photo-2.jpg" alt="" />
+          </div>
+          <div class="flex-1 right">
+            <h1>About <span>Me</span></h1>
+            <h3>Hello! i’m Dileep.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat
+            </p>
+            <div class="social">
+              <a href="#"><img src="/img/website.svg" alt="" /></a>
+              <a
+                href="https://www.facebook.com/dileep.sajja.52/"
+                target="_blank"
+                ><img src="/img/facebook.svg" alt=""
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/dileep-sajja-317832255/"
+                target="_blank"
+              >
+                <img src="/img/linkedin.svg" alt=""
+              /></a>
+              <a href="https://github.com/DILEEPSAJJA" target="_blank">
+                <img src="/img/github.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="container">
+          <h1 class="section-heading"><span>I am </span>Good At</h1>
+          <p>Languages</p>
+
+          <div class="card-wrapper">
+            <div class="card">
+              <img src="/img/css.svg" alt="" height="100" width="100" />
+              <h2>CSS</h2>
+              <p>
+                I have good enough practice with latest version of css and i am
+                interested to learn more about it.
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/html.svg" alt="" height="100" width="100" />
+              <h2>HTML</h2>
+              <p>
+                I am enjoying while doing html websites , pages and iam much
+                more interested to learn about it.
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/java.svg" alt="" height="100" width="100" />
+              <h2>JAVA</h2>
+              <p>
+                i learnt java , i love to solve more questions in java .it's
+                really a interesting language and GUI also.
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/javascript.svg" alt="" height="100" width="100" />
+              <h2>JAVASCRIPT</h2>
+              <p>
+                I am at the beginner stage of learning of this language and i am
+                interested to learn more about it.
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/sql.svg" alt="" height="100" width="100" />
+              <h2>SQL</h2>
+              <p>
+                I love to write optimized queries because i dont't want to
+                stress the query engine.
+              </p>
+            </div>
+            <div class="card">
+              <img src="/img/cpp.svg" alt="" height="100" width="100" />
+              <h2>C++</h2>
+              <p>
+                it is most friendly platform to complie the code,and also have
+                more in-built functions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="./Hello.js"></script>
+      <script>
+        const { getHtml } = window;
+        const div = document.createElement("div");
+        div.innerHTML = getHtml();
+        document.body.appendChild(div);
+      </script>
+      <!--
+        <section class="freelancer">
+            <div id="header">
+                <h1>I Am Available For web development.</h1>
+            </div>
+            <p>I provide high standard clean website for your business solutions</p>
+            <a href="resume.docx">
+            <button class="btn btn-primary">Download CV</button></a>
+        </section> -->
+
+      <!-- I Am Available For web development. -->
+
+      <section id="work" class="work">
+        <div class="container">
+          <h1 class="section-heading"><span>My</span> Education</h1>
+          <p></p>
+
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="overlay">
+                <span>Category</span>
+                <a href="#">B.Tech</a>
+              </div>
+              <img src="/img/cvr.webp" alt="" />
+            </div>
+            <div class="card">
+              <div class="overlay">
+                <span>Category</span>
+                <a href="#">Inter College</a>
+              </div>
+              <img src="/img/tirumala.webp" alt="" />
+            </div>
+            <div class="card">
+              <div class="overlay">
+                <span>Category</span>
+                <a href="#">School</a>
+              </div>
+              <img src="/img/pragati.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="blog">
+        <div class="container">
+          <h1 class="section-heading"><span>My</span> Certifications</h1>
+          <p></p>
+
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="img-wrapper">
+                <img src="/img/NIT.jpg" alt="" height="50" width="100" />
+              </div>
+              <div class="card-content">
+                <a href="#">
+                  <h1>participation certificate</h1>
+                </a>
+                <span>Jan 31, 2022</span>
+                <p>
+                  NIT warangal computer science department conducted a online
+                  course on beginner of python , artificial intelligence and
+                  machine learning in 5 days.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-wrapper">
+                <img src="/img/python.png" alt="" height="100" width="100" />
+              </div>
+              <div class="card-content">
+                <a href="#">
+                  <p><br /></p>
+                  <h1>completion certificate</h1>
+                </a>
+                <span>Oct 17, 2022</span>
+                <p>
+                  kaggle is a online source of learning which gives the
+                  certificate of completion of one course.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-wrapper">
+                <img src="/img/sql.jpg" alt="" height="50" width="100" />
+              </div>
+              <div class="card-content">
+                <a href="#">
+                  <h1>Merit certificate</h1>
+                </a>
+                <span>Jan 03, 2023</span>
+                <p>Certifications by hackerrank gives on our merit.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="container">
+          <h1 class="section-heading">Contact <span>Me</span></h1>
+          <p>
+            I provide high standard clean website for your business solutions
+          </p>
+          <div class="card-wrapper">
+            <div class="card">
+              <img src="/img/phone-2.svg" alt="" height="100" width="100" />
+              <h1>Call On</h1>
+              <h6>+91 7981305975</h6>
+            </div>
+            <div class="card">
+              <img src="/img/msg.svg" alt="" height="100" width="100" />
+              <h1>Email At</h1>
+              <h6>sajjadileep2003@gmail.com</h6>
+            </div>
+            <div class="card">
+              <img src="/img/map.svg" alt="" height="100" width="100" />
+              <h1>Studying in</h1>
+              <h6>
+                CVR college of engineering,Ibrahimpatnam,Hyderabad, Telangana,
+                501510, India
+              </h6>
+            </div>
+          </div>
+
+          <form action="" id="formcontact">
+            <div class="input-wrap">
+              <input type="text" id="texting" placeholder="Your Name *" />
+              <input type="email" id="emailing" placeholder="Your Email *" />
+            </div>
+            <div class="input-wrap-2">
+              <input type="text" id="textareas" placeholder="Your Subject..." />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message..."
+              ></textarea>
+            </div>
+            <div class="btn-wrapper">
+              <!-- <button class="btn btn-primary" id="sendbtn">Send Message</button> -->
+              <button id="a">
+                <a href="/">working</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <img class="footer-logo" src="/img/logo-2.svg" alt="" />
+        <div class="footer-socials">
+          <a
+            href="https://instagram.com/_dileep__deepu?igshid=ZDdkNTZiNTM="
+            target="_blank"
+            ><img src="/img/instagram.svg" alt="" height="100" width="100"
+          /></a>
+          <a href="https://www.facebook.com/dileep.sajja.52/" target="_blank"
+            ><img src="/img/facebook-1.svg" alt="" height="100" width="100"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/dileep-sajja-317832255/"
+            target="_blank"
+          >
+            <img src="/img/linkedin-1.svg" alt="" height="100" width="100"
+          /></a>
+          <a href="https://github.com/DILEEPSAJJA" target="_blank">
+            <img src="/img/github-1.svg" alt="" height="100" width="100"
+          /></a>
+        </div>
+        <div class="copyright">Copyright 2023 © Dileep</div>
+      </footer>
+    </div>
+
+    <!--  <script src="/img/Hello.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="app.js"></script>
+    <!--  <script type="text/typescript" src="Hello.ts"></script> -->
+    <!-- <script src="Hello.js"></script> -->
+    <!--<script src="Hello.ts"></script> -->
+  </body>
+</html>
